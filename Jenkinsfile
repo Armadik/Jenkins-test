@@ -11,7 +11,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Test_build'
                 env
             }
         }
