@@ -10,10 +10,10 @@ pipeline {
             }
         }
         stage('Build') {
-            steps {
-                script {
-                    env
-                }
+            steps { script {
+
+                print  "I am alive!"
+                    }
             }
         }
     }
