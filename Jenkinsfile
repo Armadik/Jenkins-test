@@ -6,5 +6,10 @@ pipeline {
                 echo 'Test_build'
             }
         }
+        stage('Docker') {
+            steps {
+                docker ps
+            }
+        }
     }
 }
