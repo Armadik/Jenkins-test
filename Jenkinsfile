@@ -11,7 +11,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                env
+                script {
+                    env
+                }
             }
         }
     }
