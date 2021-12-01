@@ -24,14 +24,5 @@ pipeline {
                 }
             }
         }
-        stage('Test post') {
-            post {
-                failure {
-                    script {
-                        commonMethods.emailJobStatus("BUILD FAILED")
-                    }
-                }
-            }
-        }
     }
 }
