@@ -10,9 +10,9 @@ pipeline {
             }
         }
         stage('Build') {
-            steps { script {
-
-                print  "I am alive!"
+            steps {
+                script {
+                print  env.EMAIL_ADDRESS_FOR_NOTIFICATIONS
                     }
             }
         }
