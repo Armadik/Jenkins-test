@@ -27,8 +27,9 @@ pipeline {
         post {
             failure {
                 script {
-                    commonMethods.emailJobStatus ("BUILD FAILED")
+                    commonMethods.emailJobStatus("BUILD FAILED")
                 }
             }
+        }
     }
 }
